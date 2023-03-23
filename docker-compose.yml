@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  bot:
+    image: "joygpt"
+    env_file:
+      - .env
