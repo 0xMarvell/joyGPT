@@ -29,7 +29,7 @@ func main() {
 		log.Panic(err.Error())
 	}
 
-	bot.Debug = true // set to true during development, should be set to false in production environment
+	bot.Debug = false // set to true during development, should be set to false in production environment
 
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 
