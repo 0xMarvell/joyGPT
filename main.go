@@ -26,7 +26,7 @@ func main() {
 	client := openai.NewClient(GPT_SECRET)
 	bot, err := tgbotapi.NewBotAPI(TELEGRAM_SECRET)
 	if err != nil {
-		log.Panic(err)
+		log.Panic(err.Error())
 	}
 
 	bot.Debug = true // set to true during development, should be set to false in production environment
@@ -40,7 +40,7 @@ func main() {
 
 	for update := range updates {
 
-		if update.Message != nil { // If we got a message/text from a user
+		if update.Message != nil { // If we got a text message from a user
 			resp, err := client.CreateChatCompletion(
 				context.Background(),
 				openai.ChatCompletionRequest{

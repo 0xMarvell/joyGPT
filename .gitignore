@@ -6,7 +6,7 @@
 *.dll
 *.so
 *.dylib
-cmd/app/bin/joygpt
+joyGPT
 
 # Test binary, built with `go test -c`
 *.test
