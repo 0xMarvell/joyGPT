@@ -1,3 +1,6 @@
+ARG TELEGRAM_SECRET
+ARG GPT_SECRET
+
 FROM golang:1.20-alpine
 
 WORKDIR /app
