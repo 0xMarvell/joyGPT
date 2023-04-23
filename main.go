@@ -8,16 +8,16 @@ import (
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	openai "github.com/sashabaranov/go-openai"
 )
 
 func main() {
 	// Set up environment variables
-	envErr := godotenv.Load()
-	if envErr != nil {
-		log.Fatal("Error loading .env file: ", envErr.Error())
-	}
+	// envErr := godotenv.Load()
+	// if envErr != nil {
+	// 	log.Fatal("Error loading .env file: ", envErr.Error())
+	// }
 
 	TELEGRAM_SECRET := os.Getenv("TELEGRAM_SECRET")
 	GPT_SECRET := os.Getenv("GPT_SECRET")
